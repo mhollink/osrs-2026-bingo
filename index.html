@@ -23,9 +23,9 @@
         }
 
         .cell {
-            border: 2px solid #ccc;
+            background: rgba(0, 0, 0, 0.025);
+            border: 2px dashed rgba(0, 0, 0, 0.1);
             border-radius: 5%;
-            background: #eee;
             padding: 8px;
             aspect-ratio: 1/1;
             display: flex;
@@ -33,10 +33,6 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-        }
-
-        .cell.done {
-            background: rgba(0, 255, 0, 0.3);
         }
 
         .cell img {
@@ -53,6 +49,12 @@
             color: #333;
             white-space: pre-wrap;
         }
+
+        .cell.done {
+            background: rgba(0, 255, 0, 0.1);
+            border: 2px solid  rgba(0, 255, 0, 0.5);
+        }
+
     </style>
 </head>
 <body>
@@ -72,7 +74,7 @@
         {description: "Farmers's outfit", image: "farmers-outfit.png"},
         {description: "Hunter's outfit", image: "hunter-outfit.png"},
         {description: "Smiths' Uniform", image: "smiths-outfit.png"},
-        {description: "Completed Vale Totems Collection", image: "vale-totems.png"},
+        {description: "Completed Vale Totems Collection log", image: "vale-totems.png"},
 
         {description: "Potion storage", image: "potion-storage.png"},
         {description: "Ornate jewellery box", image: "jewelry.png"},
