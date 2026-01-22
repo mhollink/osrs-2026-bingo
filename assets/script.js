@@ -83,7 +83,7 @@ function appendCellsToGrid(cells) {
  * @returns {Promise<{description: string, image: string, done: boolean}[]>}
  */
 async function loadGoalsFromFile() {
-    return (await fetch("goals.csv")
+    return (await fetch("_goals.csv")
         .then((response) => response.text())
         .then((data) =>
             data.split("\n")
@@ -94,4 +94,43 @@ async function loadGoalsFromFile() {
                 })));
 }
 
-(async () => appendCellsToGrid(convertGoalsToGridCells(await loadGoalsFromFile())))();
+function createCellWithContent(content) {
+    const cell = document.createElement("td");
+    cell.textContent = content;
+    return cell;
+}
+
+function createTableRow(event) {
+    const row = document.createElement("tr");
+    row.append(
+        createCellWithContent(event.description),
+        createCellWithContent(event.time)
+    );
+    return row;
+}
+
+function convertTimelineToTableRows(events) {
+    return events.map(event => createTableRow(event));
+}
+
+function appendRowsToTable(rows) {
+    const tableBody = document.getElementById("events");
+    tableBody.append(...rows);
+}
+
+async function loadTimelineFromFile() {
+    return (await fetch("_updates.csv")
+        .then((response) => response.text())
+        .then((data) =>
+            data.split("\n")
+                .splice(1) // Remove header row.
+                .map((line) => {
+                    const [description, time] = line.split(",");
+                    return {description, time};
+                })));
+}
+
+(async () => {
+    appendCellsToGrid(convertGoalsToGridCells(await loadGoalsFromFile()));
+    appendRowsToTable(convertTimelineToTableRows(await loadTimelineFromFile()));
+})();
