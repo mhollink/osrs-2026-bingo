@@ -83,7 +83,7 @@ function appendCellsToGrid(cells) {
  * @returns {Promise<{description: string, image: string, done: boolean}[]>}
  */
 async function loadGoalsFromFile() {
-    return (await fetch("_goals.csv")
+    return (await fetch("goals.csv")
         .then((response) => response.text())
         .then((data) =>
             data.split("\n")
@@ -119,7 +119,7 @@ function appendRowsToTable(rows) {
 }
 
 async function loadTimelineFromFile() {
-    return (await fetch("_updates.csv")
+    return (await fetch("updates.csv")
         .then((response) => response.text())
         .then((data) =>
             data.split("\n")
