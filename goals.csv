@@ -1,26 +1,26 @@
-description,image,done
-Quest point cape,qpc.png,true
-Dramenless Fairy rings,fairy-ring.png,false
-Dragon Boots,dragon-boots.png,false
-Dragon pickaxe,dragon-pick.png,false
-Dragon (felling) axe,dragon-axe.png,true
-Raiments of the Eye,runecraft-outfit.png,false
-Elite void equipment,elite-void.png,false
-Hunter's outfit,hunter-outfit.png,false
-Smiths' Uniform,smiths-outfit.png,false
-Green-log Vale Totems Collection,vale-totems.png,false
-Potion storage,potion-storage.png,false
-Ornate jewellery box,jewelry.png,false
-Achievement dairy cape,achievements.png,false
-Build all stashes up to Elite,stashes.png,false
-1K clues done,clues.png,false
-Fire cape,fire-cape.png,false
-Green-log Tithe Farm,tithe-farm.png,false
-Full Ahrims,ahrims.png,false
-Full Dharoks,dharoks.png,false
-Full Guthans,guthans.png,false
-Seers Ring (i),seers.png,false
-Deadeye prayer,range-pray.png,false
-Upgrade Ava's accumulator,avas.png,false
-Mystic Vigour prayer,magic-pray.png,false
-Archers Ring (i),archers.png,false
+description;image;done
+Quest point cape;qpc.png;true
+Dramenless Fairy rings;fairy-ring.png;false
+Dragon Boots;dragon-boots.png;false
+Dragon pickaxe;dragon-pick.png;false
+Dragon (felling) axe;dragon-axe.png;true
+Raiments of the Eye;runecraft-outfit.png;false
+Elite void equipment;elite-void.png;true
+Hunter's outfit;hunter-outfit.png;false
+Smiths' Uniform;smiths-outfit.png;false
+Green-log Vale Totems Collection;vale-totems.png;false
+Potion storage;potion-storage.png;false
+Ornate jewellery box;jewelry.png;false
+Achievement dairy cape;achievements.png;false
+Build all stashes up to Elite;stashes.png;false
+1K clues done;clues.png;false
+Fire cape;fire-cape.png;false
+Green-log Tithe Farm;tithe-farm.png;false
+Full Ahrims;ahrims.png;false
+Full Dharoks;dharoks.png;false
+Full Guthans;guthans.png;false
+Seers Ring (i);seers.png;false
+Deadeye prayer;range-pray.png;false
+Upgrade Ava's accumulator;avas.png;false
+Mystic Vigour prayer;magic-pray.png;false
+Archers Ring (i);archers.png;false

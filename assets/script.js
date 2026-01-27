@@ -89,7 +89,7 @@ async function loadGoalsFromFile() {
             data.split("\n")
                 .splice(1) // Remove header row.
                 .map((line) => {
-                    const [description, image, done] = line.split(",");
+                    const [description, image, done] = line.split(";");
                     return {description, image, done: done === "true"};
                 })));
 }
@@ -125,7 +125,7 @@ async function loadTimelineFromFile() {
             data.split("\n")
                 .splice(1) // Remove header row.
                 .map((line) => {
-                    const [description, time] = line.split(",");
+                    const [description, time] = line.split(";");
                     return {description, time};
                 })));
 }
